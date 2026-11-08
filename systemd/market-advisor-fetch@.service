@@ -1,3 +1,6 @@
+# This file is a template. scripts/install-timers.sh replaces @APP_USER@
+# and @APP_DIR@ with the detected values before installing it.
+
 [Unit]
 Description=Market Adviser Bot data fetch (%i)
 Wants=network-online.target
@@ -15,6 +18,3 @@ PrivateTmp=true
 ProtectSystem=full
 ProtectHome=read-only
 ReadWritePaths=@APP_DIR@/data @APP_DIR@/logs
-
-[Install]
-# Template unit; instances are started by the matching timers.
